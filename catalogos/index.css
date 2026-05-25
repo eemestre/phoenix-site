@@ -1,0 +1,110 @@
+header {
+  padding-top: var(--small-space);
+  padding-bottom: var(--small-space);
+  padding-right: var(--large-space);
+  padding-left: var(--large-space);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--large-space);
+}
+
+a {
+  font-family: "Dream Orphans";
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+a:hover {
+  filter: brightness(70%);
+}
+
+.header-line {
+  margin-right: var(--large-space);
+  margin-left: var(--large-space);
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  color: red;
+}
+
+#banner {
+  position: relative;
+}
+
+#banner:before {
+  background-image: url(../assets/banner.png);
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.phoenix-title {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+}
+
+p {
+  margin-top: 32px;
+  font-size: 28px;
+}
+
+.phoenix-title-line {
+  width: 100%;
+  margin: 0px;
+  color: red;
+}
+
+.phoenix-subtitle {
+  color: white;
+  margin-top: 10px;
+}
+
+#representadas {
+  background-color: var(--phoenix-red);
+}
+
+#carrossel {
+  padding: var(--small-space);
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: var(--large-space);
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin: 0px;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
